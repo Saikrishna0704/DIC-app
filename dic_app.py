@@ -55,7 +55,6 @@ def main():
     app_id = st.text_input("Enter the Google Play Store App ID:")
 
     if app_id:
-        try:
             st.write("Fetching reviews for app ID:", app_id)
             reviews = reviews_all(app_id, lang='en')
             df = pd.json_normalize(reviews)
@@ -72,9 +71,7 @@ def main():
             fig = px.bar(proportions, x='Proportion', y='Sentiment', orientation='h',
             color='Sentiment', labels={'Proportion': 'Proportion', 'Sentiment': 'Sentiment'},
             title='Proportion of Positive and Negative Sentiments')
-            st.plotly_chart(fig)
-        except Exception as e:
-            st.error("Error fetching data. Please check the entered App ID or try again later.")     
+            st.plotly_chart(fig)   
 
 
 
