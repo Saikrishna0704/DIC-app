@@ -7,6 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1h_74N2kuclzGsRa1tLFJ4CqrX1RtVbKv
 """
 
+!pip install streamlit google-play-scraper
+
 import pandas as pd
 from google_play_scraper import reviews_all
 from transformers import pipeline
