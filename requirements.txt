@@ -3,7 +3,7 @@ streamlit
 pandas
 numpy
 plotly
-transformers
+transformers>=2.3.0
 tf-keras
 
 
