@@ -4,7 +4,6 @@ pandas
 numpy
 plotly
 transformers
-torch>=1.8.0
 tf-keras
 
 
