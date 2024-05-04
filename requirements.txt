@@ -1,1 +1,6 @@
 google-play-scraper
+streamlit
+pandas
+numpy
+plotly
+transformers
